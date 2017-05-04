@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git(url: 'git@github.com:ericsgarcia/jenkinstest.git', branch: 'master', credentialsId: 'ericsgarcia', poll: true)
+        git(url: 'git@github.com:ericsgarcia/jenkinstest.git', branch: 'master', poll: true)
       }
     }
   }
